@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 1090236122}
   - component: {fileID: 1090236121}
   - component: {fileID: 1090236123}
+  - component: {fileID: 1090236124}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -307,3 +308,61 @@ MonoBehaviour:
   baseColor: {r: 0, g: 0, b: 0, a: 1}
   actionColor: {r: 1, g: 0, b: 0, a: 1}
   speed: 2
+--- !u!114 &1090236124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090236120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 041902570287f43c9a176230a32340b8, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1090236123}
+        m_TargetAssemblyTypeName: PlayerControllerNew, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f3c442b9-d176-413b-bc96-17017bfbb1ce
+    m_ActionName: PlayerMap/Jump[/Keyboard/p,/Keyboard/e,/Mouse/rightButton,/DualSenseGamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c45fc9b6-97aa-4d26-9fa1-7c7f833c0115
+    m_ActionName: PlayerMap/Move
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c953e99c-e0b0-4c03-b974-a174e34cb2f0
+    m_ActionName: PlayerMap/Die
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1b16a205-32a3-41e2-bd0f-d808186f4117
+    m_ActionName: PlayerMap/Shoot
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerMap
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
